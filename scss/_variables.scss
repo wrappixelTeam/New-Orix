@@ -1,0 +1,134 @@
+// MY THEME COLORS
+
+$primary:#763EBD;
+$secondary: #95CFD5;
+$success:#55CE1B;
+$warning:#FD7E50;
+$info:#2F6DC3;
+$dark:#4C414F;
+$white:#ffff;
+$danger:#BC3043;
+
+$primary-bg-subtle:#836E89;
+$info-bg-subtle:#D9EDFF;
+$danger-bg-subtle:  #FFE1E0;
+$success-bg-subtle:   #E3F9DD;
+$dark-bg-subtle:#F0F0F0;
+$warning-bg-subtle:#FBF5EE;
+
+$primary-text-emphasis:#836E89;
+$secondary-text-emphasis:#310E3A;
+$info-text-emphasis: #8F7C95;
+$dark-text-emphasis: #7B6681;
+$danger-text-emphasis: #463949;
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: 2px,
+  7: 4px,
+  8: 6px,
+  9: 7px,
+  10: 8px,
+  11: 10px,
+  12: 12px,
+  13: 13px,
+  14: 15px,
+  15: 17px,
+  16: 18px,
+  17: 20px,
+  18: 22px,
+  19: 24px,
+  20: 25px,
+  21: 30px,
+  22: 34px,
+  23: 36px,
+  24: 36px,
+  25: 38px,
+  26: 40px,
+  27: 48px,
+  28: 50px,
+  29: 60px,
+  30: 75px,
+  31: 91px,
+  32: 92px,
+  33: 95px,
+  34: 150px,
+  35: 5px,
+  36: 32px,
+  37: 3px,
+
+
+) !default;
+// scss-docs-end spacer-variables-maps
+$font-family-base:            'Circular Pro' !default;
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+// scss-docs-start font-sizes
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: 12px,
+  8: 13px,
+  9: 14px,
+  10: 15px,
+  11: 16px,
+  12: 18px,
+  13: 20px,
+  14: 22px,
+  15: 28px,
+
+) !default;
+// scss-docs-end font-sizes
+
+$position-values: (
+  0: 0,
+  1:1px,
+  50: 50%,
+  100: 100%,
+) !default;
+
+// border color
+$border-color: #EBECEF;
+
+// grid gutter
+$grid-gutter-width: 30px;
+
+// scss-docs-start table-variables
+$table-cell-padding-y: 18px !default;
+$table-cell-padding-x: 0px !default;
+$table-border-color: #F4EFF5;
+
+// Custom card
+
+$card-spacer-y:  20px !default;
+$card-spacer-x:  20px !default;
+$card-border-width: 1px !default;
+$card-border-color: #F4F5F7 !default;
+$card-border-radius: 12px !default;
+$card-box-shadow: 0px 12px 30px -4px rgba(145, 158, 171, 0.10) !default;
+$card-bg: $white;
+
+// Common
+$min-contrast-ratio: 1.7 !default;
+
+// Margins
+// $enable-negative-margins: true !default;
+$enable-shadows: true !default;

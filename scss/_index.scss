@@ -1,0 +1,174 @@
+// Left-sidebar -styles //
+
+.sidebar{
+    width: 0px;
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+
+    &.active{
+        width: 247px;
+    }
+
+ .sidebar-wrapper{
+    height: 100vh;
+    overflow: hidden auto;
+
+    &::-webkit-scrollbar{
+        width: 10px;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #ae9fc0;
+        border-radius: 20px;
+        border: transparent;
+    }
+ }
+
+
+// links
+    ul{
+        list-style-type: none;
+        li{
+            &:hover{
+                p{
+                    color: #310E3A !important;
+                }
+                img{
+                    filter: invert(6%) sepia(48%) saturate(6504%) hue-rotate(282deg) brightness(73%) contrast(94%);
+                }
+            }
+        }
+        .dashboard{
+            &:hover{
+                  img{
+                    filter: none !important;
+                  }
+            }
+        }
+    }
+    // unlimited
+    .unlimited{
+   border-radius: 16px;
+   background: linear-gradient(112deg, #763EBD 0%, #652BAD 100%);
+    }
+}
+
+// Right-sidebar styles //
+
+.right-sidebar{
+    width: 0px;
+    position: fixed;
+    right: 0;
+    overflow: hidden;
+
+    &.active{
+        width: 298px;  
+    }
+
+
+  .sidebar-wrapper{
+    height: 100vh;
+    overflow: hidden auto;
+
+    &::-webkit-scrollbar{
+        width: 10px;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #ae9fc0;
+        border-radius: 20px;
+        border: transparent;
+    }
+  }
+}
+
+// main dashboard style
+
+.dashboard{
+    &.left-in{
+        margin-left: 247px;
+    }
+
+    &.right-in{
+        margin-right: 298px;
+    }
+
+    @include media-breakpoint-down(sm){
+        &.left-in{
+            margin-left: 0px;
+        }
+        &.right-in{
+            margin-right: 298px;
+        }
+    }
+}
+
+// sales chart
+.sales-chart-wrapper{
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+
+// location-world-map
+// jvector map
+.jvectormap-container{
+    svg{
+        width: 100%;
+        height: 108px;
+    }
+    .jvectormap-zoomin{
+        display: none;
+    }
+    .jvectormap-zoomout{
+        display: none;
+    }
+}
+
+// Recent Activty
+
+.todays-actvity{
+    .left{
+        position: relative;
+        &::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background: #EFE8DF;
+        left: 9px;
+        top: 0;
+        }
+    }
+}
+.yesterday{
+    letter-spacing: 1px;
+}
+
+.logo-heading{
+    font-size: 22.5px;
+}
+// dropdown - modification
+.dropend .dropdown-toggle::after { 
+    content: none; 
+}
+.dropstart .dropdown-toggle::before { 
+    content: none; 
+}
+.dropdown-toggle::after{
+    content: none;
+}
+
+.dropdown{
+    .dropdown-menu{
+        li{
+            &:hover{
+                background-color: rgb(185, 185, 185) !important;
+            }
+        }
+    }
+}

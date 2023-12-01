@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Circular Pro Book';
+    src: url('CircularPro-Book.eot');
+    src: url('CircularPro-Book.eot?#iefix') format('embedded-opentype'),
+        url('CircularPro-Book.woff2') format('woff2'),
+        url('CircularPro-Book.woff') format('woff'),
+        url('CircularPro-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Pro';
+    src: url('CircularPro-Medium.eot');
+    src: url('CircularPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('CircularPro-Medium.woff2') format('woff2'),
+        url('CircularPro-Medium.woff') format('woff'),
+        url('CircularPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Pro';
+    src: url('CircularPro-Bold.eot');
+    src: url('CircularPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CircularPro-Bold.woff2') format('woff2'),
+        url('CircularPro-Bold.woff') format('woff'),
+        url('CircularPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Pro';
+    src: url('CircularPro-BlackItalic.eot');
+    src: url('CircularPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('CircularPro-BlackItalic.woff2') format('woff2'),
+        url('CircularPro-BlackItalic.woff') format('woff'),
+        url('CircularPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+

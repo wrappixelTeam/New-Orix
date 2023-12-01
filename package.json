@@ -1,0 +1,24 @@
+{
+  "name": "black-friday",
+  "version": "6.0.0",
+  "description": "black-friday",
+  "author": "wrappixel.com",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-npm-dist": "^1.0.3",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "~1.26.5"
+  },
+  "dependencies": {
+    "@tabler/icons": "^2.42.0",
+    "apexcharts": "^3.44.0",
+    "bootstrap": "^5.3.0",
+    "jquery": "3.6.4",
+    "jvectormap": "^2.0.4"
+  }
+}

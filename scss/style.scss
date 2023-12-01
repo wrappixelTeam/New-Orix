@@ -1,0 +1,12 @@
+// variables
+@import "./variables";
+// utilities
+@import "./utilities";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./mixin";
+@import "./font-files";
+@import "./index";
+@import "./global";
+
+@import "../icons/tabler-icons/tabler-icons.min.css"; 
