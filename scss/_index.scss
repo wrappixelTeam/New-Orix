@@ -32,22 +32,42 @@
     ul{
         list-style-type: none;
         li{
+       
+            .ti{
+                color: #836E89 !important;
+                font-weight: 500;
+                font-size: 18px;
+            }
+            .ecommerce{
+                color: #836E89;
+            }
+
             &:hover{
                 p{
                     color: #310E3A !important;
                 }
-                img{
-                    filter: invert(6%) sepia(48%) saturate(6504%) hue-rotate(282deg) brightness(73%) contrast(94%);
+                .ti{
+                    color: #310E3A !important;
+                }
+                .ecommerce{
+                    color: #310E3A ;
                 }
             }
+
         }
-        .dashboard{
+        .dashboards{
+            .ti{
+                color: #310E3A !important;
+                font-weight: 500;
+                font-size: 18px;
+            }
             &:hover{
-                  img{
-                    filter: none !important;
+                  svg{
+                    color: #310E3A ;
                   }
             }
         }
+
     }
     // unlimited
     .unlimited{
@@ -63,6 +83,7 @@
     position: fixed;
     right: 0;
     overflow: hidden;
+    z-index: 1;
 
     &.active{
         width: 298px;  
@@ -104,6 +125,18 @@
         }
         &.right-in{
             margin-right: 298px;
+        }
+    }
+}
+
+// header
+
+header{
+    .logo{
+        display: none;
+
+        @include media-breakpoint-down(sm){
+            display: block;
         }
     }
 }
@@ -163,12 +196,32 @@
     content: none;
 }
 
-.dropdown{
+.notification-dropdown{
     .dropdown-menu{
-        li{
-            &:hover{
-                background-color: rgb(185, 185, 185) !important;
-            }
+        width: 360px;
+    }
+}
+
+// body-backdrop
+
+body{
+    position: relative;
+    &.backdrops{
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #0000005b;
+            top: 0;
+            z-index: 0;
         }
     }
+   
+}
+
+// modal
+
+.modal-body{
+    height: 400px;
 }
