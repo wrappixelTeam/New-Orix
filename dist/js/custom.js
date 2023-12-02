@@ -74,6 +74,7 @@ window.addEventListener('resize', function(event){
       left_sidebar.classList.remove("active");
       right_sidebar.classList.remove("active");
       dashboard.classList.remove("left-in");
+      dashboard.classList.remove("right-in");
     }
     else{
       left_sidebar.classList.add("active");
