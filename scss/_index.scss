@@ -119,12 +119,12 @@
         margin-right: 298px;
     }
 
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(lg){
         &.left-in{
             margin-left: 0px;
         }
         &.right-in{
-            margin-right: 298px;
+            margin-right: 0px;
         }
     }
 }

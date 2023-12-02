@@ -9,7 +9,7 @@ const notification= document.querySelector(".notification");
 
 const handle_leftSidebar = () => {
 
-        if(window.innerWidth<=572){
+        if(window.innerWidth<=992){
             if(right_sidebar.classList.contains("active")){
 
                 left_sidebar.classList.toggle("active");
@@ -38,7 +38,7 @@ const handle_leftSidebar = () => {
 
 const handle_rightSidebar = () => {
 
-        if(window.innerWidth<=572){
+        if(window.innerWidth<=992){
             if(left_sidebar.classList.contains("active")){
 
                 left_sidebar.classList.toggle("active");

@@ -29355,12 +29355,12 @@ textarea.form-control-lg {
 .dashboard.right-in {
   margin-right: 298px;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .dashboard.left-in {
     margin-left: 0px;
   }
   .dashboard.right-in {
-    margin-right: 298px;
+    margin-right: 0px;
   }
 }
 
