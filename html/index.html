@@ -21,7 +21,7 @@
             <div class="logo bg-white p-3 border-bottom">
                 <h3 class="mb-0 text-primary fw-bold logo-heading text-center">Orix</h3>
             </div>
-            <div class="sidebar-wrapper pt-29 pb-30 border-end">
+            <div id="simple-bar" class="sidebar-wrapper pt-29 pb-30 border-end">
                 <a href="#" class="sidebar-brand mb-28 w-fit mx-auto d-block text-decoration-none">
                     <div class="wrappper d-flex gap-12">
                         <img src="../dist/images/sidebar/logo.svg" alt="logo" class="img-fluid">
@@ -41,21 +41,21 @@
                 <ul class="links mb-0 p-0 mb-lg-34 mb-30">
                     <!-- dashboard -->
                     <li class="dashboards ms-29 mb-lg-25 mb-21">
-                        <a href="javascript:void(0)" class=" d-flex gap-11 text-decoration-none">
+                        <a href="#" class=" d-flex gap-11 text-decoration-none">
                         <i class="ti ti-smart-home text-primary align-self-center"></i>
                             <p class="mb-0 fw-normal fs-6 text-secondary-emphasis">Dashboard</p>
                         </a>
                     </li>
                     <!-- Analytics -->
                     <li class="analytics ms-29 mb-lg-25 mb-21">
-                        <a href="javascript:void(0)" class=" d-flex gap-11 text-decoration-none">
+                        <a href="#" class=" d-flex gap-11 text-decoration-none">
                             <i class="ti ti-chart-pie-2 text-primary align-self-center"></i>
                             <p class="mb-0 fw-normal fs-6 text-primary-emphasis">Analytics</p>
                         </a>
                     </li>
                     <!-- Ecommerce -->
                     <li class="ecommerce ms-29 mb-lg-25 mb-21">
-                        <a href="javascript:void(0)" class=" d-flex gap-11 text-decoration-none">
+                        <a href="#" class=" d-flex gap-11 text-decoration-none">
                             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" class="ecommerce align-self-center" viewBox="0 0 14 14" fill="none">
                                 <path d="M5.738 6.66667H8.07133M1.65462 3.91667H12.1546M12.738 4.61823V10.6667C12.738 11.7712 11.8425 12.6667 10.738 12.6667H3.07129C1.96672 12.6667 1.07129 11.7712 1.07129 10.6667V4.61823C1.07129 4.16409 1.22585 3.72346 1.50955 3.36884L2.80413 1.75061C3.18368 1.27618 3.7583 1 4.36587 1H9.44337C10.0509 1 10.6256 1.27618 11.0051 1.75061L12.2997 3.36884C12.5834 3.72346 12.738 4.16409 12.738 4.61823Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                               </svg>
@@ -64,21 +64,21 @@
                     </li>
                     <!-- Project -->
                     <li class="project ms-29 mb-lg-25 mb-21">
-                        <a href="javascript:void(0)" class=" d-flex gap-11 text-decoration-none">
+                        <a href="#" class=" d-flex gap-11 text-decoration-none">
                             <i class="ti ti-receipt text-primary align-self-center"></i>
                             <p class="mb-0 fw-normal fs-6 text-primary-emphasis">Project</p>
                         </a>
                     </li>
                     <!-- E-Wallet -->
                     <li class="e_wallet ms-29 mb-lg-25 mb-21">
-                        <a href="javascript:void(0)" class=" d-flex gap-11 text-decoration-none">
+                        <a href="#" class=" d-flex gap-11 text-decoration-none">
                             <i class="ti ti-wallet text-primary align-self-center"></i>
                             <p class="mb-0 fw-normal fs-6 text-primary-emphasis">E-Wallet</p>
                         </a>
                     </li>
                     <!-- Settings -->
                     <li class="setting ms-29 mb-lg-25 mb-21">
-                        <a href="javascript:void(0)" class=" d-flex gap-11 text-decoration-none">
+                        <a href="#" class=" d-flex gap-11 text-decoration-none">
                             <i class="ti ti-settings text-primary align-self-center"></i>
                             <p class="mb-0 fw-normal fs-6 text-primary-emphasis">Settings</p>
                         </a>
@@ -109,18 +109,21 @@
 
         <section class="dashboard left-in right-in w-100">
             <!-- ------------------- Header starts----------------- -->
-            <header class="d-flex justify-content-between  bg-white position-sticky top-0 z-2 border-bottom">
-                <a href="javscript:void(0)" class="menu text-decoration-none fs-12 p-3">
+            <header class=" justify-content-between  bg-white position-sticky top-0 z-2 border-bottom">
+                <a href="#" class="menu text-decoration-none fs-12 p-3">
                     <i class="ti ti-menu-2 text-primary align-self-center"></i>
                 </a>
-                <h3 class="mb-0 text-primary fw-bold logo-heading text-center logo p-3">Orix</h3>
-                <a href="javscript:void(0)" class="recent d-flex fs-12 gap-10 text-decoration-none p-3">
+                  <div class="logo gap-11 p-3">
+                    <img src="../dist/images/sidebar/logo.svg" alt="logo">
+                    <h3 class="mb-0 text-primary fw-bold logo-heading text-center align-self-center">Orix</h3>
+                  </div>
+                <a href="#" class="recent d-flex fs-12 gap-10 text-decoration-none p-3">
                     
                     <i class="ti ti-activity text-primary align-self-center"></i>
                 </a>
             </header>
             <!-- ------------------- Header ends----------------- -->
-            <div class="main-dashboard pt-29 container overflow-hidden">
+            <div class="main-dashboard pt-29  container-fluid px-20 px-lg-21 overflow-hidden">
                 <!-- --------------First Block------------------ -->
                 <div class="first-block d-flex justify-content-between ">
                     <div class="left">
@@ -129,7 +132,7 @@
                     </div>
                     <div class="right d-flex gap-3 align-self-center">
                         <div class="notification-dropdown">
-                            <a href="javascript:void(0)" class=" dropdown-toggle notification round-48 bgclr-beta d-flex justify-content-center align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a href="#" class=" dropdown-toggle notification round-48 bgclr-beta d-flex justify-content-center align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="../dist/images/dashboard/notification.svg" alt="notification-icon"
                             class="img-fluid">
                             </a>
@@ -141,7 +144,7 @@
                                </div>
                                <!-- persons -->
                                <!-- rohan -->
-                               <a href="javascript:void(0)" class="user-rohan px-21 py-3 d-flex gap-3 text-decoration-none">
+                               <a href="#" class="user-rohan px-21 py-3 d-flex gap-3 text-decoration-none">
                                 <div class="left round">
                                   <img src="../dist/images/dashboard/rohan.jpg" alt="rohan" class="img-fluid rounded-circle">
                                 </div>
@@ -151,7 +154,7 @@
                                 </div>
                             </a>
                                <!-- salma -->
-                               <a href="javascript:void(0)" class="user-rohan px-21 py-3 d-flex gap-3 text-decoration-none">
+                               <a href="#" class="user-rohan px-21 py-3 d-flex gap-3 text-decoration-none">
                                 <div class="left round">
                                   <img src="../dist/images/dashboard/salma.jpg" alt="rohan" class="img-fluid rounded-circle">
                                 </div>
@@ -161,7 +164,7 @@
                                 </div>
                             </a>
                                <!-- Atul -->
-                               <a href="javascript:void(0)" class="user-rohan px-21 py-3 d-flex gap-3 text-decoration-none">
+                               <a href="#" class="user-rohan px-21 py-3 d-flex gap-3 text-decoration-none">
                                 <div class="left round">
                                   <img src="../dist/images/dashboard/atul.jpg" alt="rohan" class="img-fluid rounded-circle">
                                 </div>
@@ -171,7 +174,7 @@
                                 </div>
                             </a>
                                <!-- Aniket -->
-                               <a href="javascript:void(0)" class="user-rohan px-21 py-3 d-flex gap-3 text-decoration-none">
+                               <a href="#" class="user-rohan px-21 py-3 d-flex gap-3 text-decoration-none">
                                 <div class="left round">
                                   <img src="../dist/images/dashboard/aniket.jpg" alt="rohan" class="img-fluid rounded-circle">
                                 </div>
@@ -181,7 +184,7 @@
                                 </div>
                             </a>
                                <!-- Rohan -->
-                               <a href="javascript:void(0)" class="user-rohan px-21 py-3 d-flex gap-3 text-decoration-none">
+                               <a href="#" class="user-rohan px-21 py-3 d-flex gap-3 text-decoration-none">
                                 <div class="left round">
                                   <img src="../dist/images/dashboard/rohan.jpg" alt="rohan" class="img-fluid rounded-circle">
                                 </div>
@@ -194,7 +197,7 @@
                           </div>
 
                         <!-- <div class="dropdown">
-                            <a href="javascript:void(0)" class=" dropdown-toggle search round-48 bgclr-alpha d-flex justify-content-center align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a href="#" class=" dropdown-toggle search round-48 bgclr-alpha d-flex justify-content-center align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="../dist/images/dashboard/search.svg" alt="search-icon" class="img-fluid">
                             </a>
                             <ul class="dropdown-menu">
@@ -205,7 +208,7 @@
                           </div> -->
 
                           <!-- Button trigger modal -->
-                      <a href="javascript:void(0)" class="search round-48 bgclr-alpha d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <a href="#" class="search round-48 bgclr-alpha d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img src="../dist/images/dashboard/search.svg" alt="search-icon" class="img-fluid">
                       </a>
                         
@@ -221,46 +224,46 @@
                                 <h5 class="mb-0 p-10 fs-12 fw-medium text-secondary-emphasis">Quick Page Links</h5>
                                 <div class="page-links py-10">
 
-                                  <a href="javascript:void(0)" class="text-decoration-none py-7 px-10 d-flex flex-column">
+                                  <a href="#" class="text-decoration-none py-7 px-10 d-flex flex-column">
                                  <span class="mb-0 fw-normal fs-9 text-danger-emphasis">Modern</span>
                                  <span class="mb-0 fs-7 fw-normal text-primary-emphasis">/dashboards/modern</span>
                                   </a>
 
-                                  <a href="javascript:void(0)" class="text-decoration-none py-7 px-10 d-flex flex-column">
+                                  <a href="#" class="text-decoration-none py-7 px-10 d-flex flex-column">
                                  <span class="mb-0 fw-normal fs-9 text-danger-emphasis">eCommerce</span>
                                  <span class="mb-0 fs-7 fw-normal text-primary-emphasis">/dashboards/ecommerce</span>
                                   </a>
 
-                                  <a href="javascript:void(0)" class="text-decoration-none py-7 px-10 d-flex flex-column">
+                                  <a href="#" class="text-decoration-none py-7 px-10 d-flex flex-column">
                                  <span class="mb-0 fw-normal fs-9 text-danger-emphasis">Contacts</span>
                                  <span class="mb-0 fs-7 fw-normal text-primary-emphasis">/apps/contacts</span>
                                   </a>
 
-                                  <a href="javascript:void(0)" class="text-decoration-none py-7 px-10 d-flex flex-column">
+                                  <a href="#" class="text-decoration-none py-7 px-10 d-flex flex-column">
                                  <span class="mb-0 fw-normal fs-9 text-danger-emphasis">Posts</span>
                                  <span class="mb-0 fs-7 fw-normal text-primary-emphasis">/apps/blog/posts</span>
                                   </a>
 
-                                  <a href="javascript:void(0)" class="text-decoration-none py-7 px-10 d-flex flex-column">
+                                  <a href="#" class="text-decoration-none py-7 px-10 d-flex flex-column">
                                  <span class="mb-0 fw-normal fs-9 text-danger-emphasis">Detail</span>
                                  <span class="mb-0 fs-7 fw-normal text-primary-emphasis">/apps/blog/detail/ streaming-video-way-before-it-was-cool-go-dark-tomorrow</span>
                                   </a>
 
-                                  <a href="javascript:void(0)" class="text-decoration-none py-7 px-10 d-flex flex-column">
+                                  <a href="#" class="text-decoration-none py-7 px-10 d-flex flex-column">
                                  <span class="mb-0 fw-normal fs-9 text-danger-emphasis">Shop</span>
                                  <span class="mb-0 fs-7 fw-normal text-primary-emphasis">/apps/ecommerce/shop</span>
                                   </a>
-                                  <a href="javascript:void(0)" class="text-decoration-none py-7 px-10 d-flex flex-column">
+                                  <a href="#" class="text-decoration-none py-7 px-10 d-flex flex-column">
                                  <span class="mb-0 fw-normal fs-9 text-danger-emphasis">Posts</span>
                                  <span class="mb-0 fs-7 fw-normal text-primary-emphasis">/apps/blog/posts</span>
                                   </a>
 
-                                  <a href="javascript:void(0)" class="text-decoration-none py-7 px-10 d-flex flex-column">
+                                  <a href="#" class="text-decoration-none py-7 px-10 d-flex flex-column">
                                  <span class="mb-0 fw-normal fs-9 text-danger-emphasis">Detail</span>
                                  <span class="mb-0 fs-7 fw-normal text-primary-emphasis">/apps/blog/detail/ streaming-video-way-before-it-was-cool-go-dark-tomorrow</span>
                                   </a>
 
-                                  <a href="javascript:void(0)" class="text-decoration-none py-7 px-10 d-flex flex-column">
+                                  <a href="#" class="text-decoration-none py-7 px-10 d-flex flex-column">
                                  <span class="mb-0 fw-normal fs-9 text-danger-emphasis">Shop</span>
                                  <span class="mb-0 fs-7 fw-normal text-primary-emphasis">/apps/ecommerce/shop</span>
                                   </a>
@@ -276,7 +279,7 @@
                 </div>
                 <!-- ------------------Second Block------------- -->
                 <div class="second-block mt-22 mb-21">
-                    <div class="row">
+                    <div class="row row-gap-lg-0 row-gap-21">
                         <!-- Customers -->
                         <div class="col-lg-4">
                             <div class="card">
@@ -375,7 +378,7 @@
                                                 </div>
 
                                                 <div class="dropend d-flex">
-                                                    <a href="javascript:void(0)" class=" dropdown-toggle right d-flex" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <a href="#" class=" dropdown-toggle right d-flex" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                         <img src="../dist/images/dashboard/three_dots_icon.svg"
                                                         alt="three_dots_icon">
                                                     </a>
@@ -404,7 +407,7 @@
                                     <div class="sales-chart-info d-flex justify-content-between">
                                         <h3 class="mb-0 fs-12 fw-bold text-secondary-emphasis align-self-center">Total Sales</h3>
                                         <div class="dropstart d-flex">
-                                            <a href="javascript:void(0)" class=" dropdown-toggle right d-flex" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a href="#" class=" dropdown-toggle right d-flex" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <img src="../dist/images/dashboard/three_dots_icon.svg"
                                                 alt="three_dots_icon">
                                             </a>
@@ -468,7 +471,7 @@
                                     <!-- Product-info -->
                                     <div class="product-info d-flex justify-content-between mb-26">
                                         <h3 class="mb-0 fs-12 text-secondary-emphasis fw-bold">Top Selling Products</h3>
-                                        <a href="javascript:void(0)" class="export d-flex gap-8 text-decoration-none">
+                                        <a href="#" class="export d-flex gap-8 text-decoration-none">
                                             <span class="fs-9 fw-medium textclr-theta">Export</span>
                                             <img src="../dist/images/dashboard/export.svg" alt="export">
                                         </a>
@@ -670,7 +673,7 @@
                                     <div class="location-title d-flex justify-content-between">
                                         <p class="mb-0 fs-12 fw-bold text-secondary-emphasis">Locations</p>
                                         <div class="dropstart d-flex">
-                                            <a href="javascript:void(0)" class=" dropdown-toggle right d-flex" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a href="#" class=" dropdown-toggle right d-flex" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <img src="../dist/images/dashboard/three_dots_icon.svg"
                                                 alt="three_dots_icon">
                                             </a>
@@ -744,13 +747,13 @@
                 <h3 class="mb-0 text-primary fw-normal logo-heading text-center">Activities</h3>
             </div>
 
-            <div class="sidebar-wrapper px-36 pt-29 pb-30">
+            <div id="right-simple-bar" class="sidebar-wrapper px-36 pt-29 pb-30">
 
                 <!-- title-info -->
                 <div class="recent-title d-flex justify-content-between mb-19">
                     <h3 class="mb-0 fs-12 fw-bold text-secondary-emphasis">Recent Activity</h3>
                     <div class="dropstart d-flex">
-                        <a href="javascript:void(0)" class=" dropdown-toggle text-decoration-none d-flex" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class=" dropdown-toggle text-decoration-none d-flex" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="../dist/images/dashboard/three_dots_icon.svg" alt="three_dots_icon">
                         </a>
                         <ul class="dropdown-menu">
@@ -890,7 +893,9 @@
     <script src="../dist/libs/jvectormap/jquery-jvectormap.min.js"></script>
     <script src="../assets/extra-libs/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
     <script src="../dist/js/Chart.js"></script>
+    <script src="../dist/libs/simplebar/dist/simplebar.min.js"></script>
     <script src="../dist/js/custom.js"></script>
+
 </body>
 
 </html>

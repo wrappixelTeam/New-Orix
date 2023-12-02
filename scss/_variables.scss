@@ -140,3 +140,12 @@ $modal-header-padding-x: 24px;
 // input
 $input-padding-y: 12px;
 $input-padding-x: 14px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1170px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;

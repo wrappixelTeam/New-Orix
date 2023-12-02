@@ -9,7 +9,7 @@ const notification= document.querySelector(".notification");
 
 const handle_leftSidebar = () => {
 
-        if(window.innerWidth<=992){
+        if(window.innerWidth<=1170){
             if(right_sidebar.classList.contains("active")){
 
                 left_sidebar.classList.toggle("active");
@@ -38,7 +38,7 @@ const handle_leftSidebar = () => {
 
 const handle_rightSidebar = () => {
 
-        if(window.innerWidth<=992){
+        if(window.innerWidth<=1170){
             if(left_sidebar.classList.contains("active")){
 
                 left_sidebar.classList.toggle("active");
@@ -70,11 +70,12 @@ recent.addEventListener("click" , handle_rightSidebar);
 
 
 window.addEventListener('resize', function(event){
-    if(this.window.innerWidth<=991){
+    if(this.window.innerWidth<=1170){
       left_sidebar.classList.remove("active");
       right_sidebar.classList.remove("active");
       dashboard.classList.remove("left-in");
       dashboard.classList.remove("right-in");
+      body.classList.remove("backdrops");
     }
     else{
       left_sidebar.classList.add("active");
@@ -107,6 +108,30 @@ window.addEventListener('resize', function(event){
        else{
         notification_dropdown.classList.remove("dropdown");
         notification_dropdown.classList.add("dropstart");
+        
        }
 
+    //    simplebar
+    var myElement = document.getElementById('simple-bar');
+new SimpleBar(myElement, { autoHide: true });
+
+    var right_simplebar = document.getElementById('right-simple-bar');
+new SimpleBar(right_simplebar, { autoHide: true });
+
+// backdrop
+
+const handle_backdrop = (e) => {
+    const element = e.target;
+    if(element.classList.contains("backdrops")){
+        if(left_sidebar.classList.contains("active")){
+            left_sidebar.classList.toggle("active");
+            body.classList.remove("backdrops");
+        }
+        else{
+            right_sidebar.classList.toggle("active");
+            body.classList.remove("backdrops");
+        }
+    }
+}
+document.addEventListener("click",handle_backdrop);
 
