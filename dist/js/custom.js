@@ -122,7 +122,7 @@ new SimpleBar(right_simplebar, { autoHide: true });
 
 const handle_backdrop = (e) => {
     const element = e.target;
-    console.log(element);
+    // console.log(element);
     if(element.classList.contains("backdrops") || element.classList.contains("sidebar-wrapper")){
         if(left_sidebar.classList.contains("active")){
             left_sidebar.classList.toggle("active");
